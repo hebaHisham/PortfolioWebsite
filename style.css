@@ -1,0 +1,871 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 30px 0px;
+    color: #ff305b;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+
+.homeSection {
+    background-image: url('./Images/slider-02.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+}
+
+.homeContent p {
+    margin-bottom: 12px;
+
+}
+
+.homeContent h3 {
+    margin-bottom: 12px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.homeContent h4 {
+    margin-bottom: 12px;
+    font-size: 26px;
+    color: #fff;
+    text-transform: capitalize;
+
+
+}
+
+.homeContent {
+
+    color: white;
+    text-align: center;
+    margin-top: 390px;
+
+
+}
+
+
+
+.navbar {
+
+    width: 80%;
+    margin: auto;
+}
+
+.leftPart {
+    float: left;
+
+
+}
+
+.leftPart a {
+    color: #ff305b;
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+
+    text-decoration: none;
+}
+
+.rightPart {
+
+    float: right;
+
+    padding: 5px;
+
+}
+
+.rightPart li {
+    float: left;
+    margin-right: 15px;
+
+}
+
+.rightPart ul {
+    list-style: none;
+
+
+}
+
+.rightPart a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+
+
+
+
+}
+
+.activeA a {
+    color: #ff305b;
+}
+
+.clear {
+    clear: both;
+}
+
+.mainNavbar {
+
+    position: fixed;
+
+
+    left: 0;
+    right: 0;
+
+
+    z-index: 5;
+
+
+}
+
+.anchorH a {
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.anchorH:hover a {
+    color: #ff305b;
+}
+
+
+
+
+
+
+
+.clear {
+    clear: both;
+}
+
+
+/*=========================================================*/
+
+/*THIS IS THE ABOUT SECTION*/
+.aboutSection{
+    width: 1170px;
+    padding: 100px 0 125px;
+    margin: auto;
+}
+
+.imgBox {
+    border-style: solid;
+    border-color: #555555;
+    border-radius: 5px ;
+    border-width: 10px;
+    width: 360px;
+    height: 440px;
+
+
+    
+
+
+}
+.image img{
+    border-radius: 5px ;
+
+    transform: translate(10px, 10px);
+
+}
+
+.imageContainer{
+    position: relative;
+   
+
+}
+.imageLayer{
+    /* background-color: black; */
+    background-color: rgba(0, 0, 0, 0.57);
+    
+   
+    width: 360px;
+    height: 440px;
+    border-radius: 5px ;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    /*DEFINING THE STARTING POSITION*/
+
+    transform: translate(29px, 300px);
+    opacity: 0;
+
+
+    /*DEFINING THE TRANSITION HERE*/
+    transition:1s 0.4s all;
+
+    z-index: 999999;
+
+  
+ 
+    
+
+    
+    
+}
+
+.imageLayerI{
+   width: fit-content; 
+   margin: auto;
+   margin-top: 55%;
+
+
+}
+
+.imageContainer:hover .imageLayer{
+    transform: translate(29px, 10px);
+    opacity: 1;
+
+}
+
+.imageLayerI i{
+    color: white;
+    padding:10px;
+}
+
+/*TRYING TO BRING THEM BESIDE EACH OTHER*/
+.leftA{
+    float: left;
+    margin-left: 8.33333333%;
+
+  
+}
+.rightA{
+    float: left;
+    padding-left: 70px;
+    width: 58.33333333%;
+}
+
+/*CHANGING THE LIST VIEW*/
+.firstListA{
+    list-style: none;
+    float: left;
+    width: 40%;
+}
+
+.secondListA{
+    list-style: none;
+    float: left;
+    
+}
+
+.firstListA li{
+    margin-bottom: 25px;
+}
+.secondListA li{
+    margin-bottom: 25px;
+}
+
+.aboutProfile{
+    margin-top: 30px;
+}
+
+.aboutIntro p{
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+/*CHANGING THE APPEARANCE OF BUTTONS*/
+
+.aBtn{
+
+    background-color: #ff305b;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-right: 10px;
+    padding: 10px 24px;
+
+}
+
+.servicesSContentP i{
+    color: #ff305b;
+    margin-bottom: 20px;
+}
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================================*/
+.servicesSection {
+    /* width: 970px; */
+    background: hsl(0, 0%, 95%);
+    text-align: center;
+    padding: 80px 0 34px;
+}
+
+.servicesSTitle {
+    text-align: center;
+}
+
+.servicesSContent {
+    /* background-color: yellow; */
+    width: 60%;
+    margin: auto;
+
+}
+
+.servicesSContentP {
+    /* background-color: aqua; */
+    float: left;
+    width: 230px;
+    padding: 40px 15px;
+
+    /*important HERE HERE HERE*/
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.servicesSTitle {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+/*==================================*/
+.servicesSContentP:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+/*====================================*/
+.portfolioSection {
+    /* background-color: aqua; */
+}
+
+.portfolioTitle {
+    /* background-color: #ff305b; */
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.portfolioNavbar {
+    /* background-color: yellow; */
+
+    width: fit-content;
+    margin: auto;
+
+}
+
+
+.portfolioNavbar li {
+
+    float: left;
+    list-style: none;
+    padding: 3px 12px;
+
+
+}
+
+.portfolioNavbar a {
+    float: left;
+    text-decoration: none;
+    color: #333333;
+
+
+
+}
+
+.portfolioContent {
+    /* background-color: green; */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+
+.portfolioContentPart img {
+    width: 345px;
+    height: 257px;
+
+
+}
+.portfolioContentPart {
+    /* background-color: royalblue; */
+    float: left;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /*RELATED TO THE LAYERING PART*/
+    position: relative;
+
+}
+
+/*ADDING THE LAYER PART*/
+
+.PortfolioContentPartLayer{
+    width: 345px;
+    height: 257px;
+    background-color: rgba(0, 0, 0, 0.57);
+
+
+    /*RELATED TO THE LAYERING PART*/
+
+    position:absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+
+}
+
+
+
+.portfolioContentPart:hover .PortfolioContentPartLayer{
+    opacity: 1;
+
+}
+
+/*positioning the icon in the bottom right corner of the layer*/
+.container2{
+    position: relative;
+    
+}
+
+.PortfolioContentPartLayer i{
+    padding-right: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #ff305b;
+}
+
+
+/*====================*/
+.factsSection {
+    background: #f1f1f1;
+    padding: 80px 0;
+
+}
+
+.factsContent {
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    padding: 100px;
+
+
+}
+
+.factsContent i{
+    color: #ff305b;
+    margin-bottom: 15px;
+}
+
+.factsContainer {
+    width: fit-content;
+    margin: auto;
+ 
+}
+/*=======================================*/
+
+/*=============THE FEED-BACK SECTION==========================*/
+
+.feedbackSection{
+    /* background-color: yellow; */
+    padding: 100px 0;
+    
+   
+ 
+    
+}
+.feedbackSTitle{
+    text-align: center;
+    margin-bottom: 140px;
+    
+    font-size: 40px;
+    font-weight: 800;
+}
+.feedbackSContainer{
+    background-color: #f1f1f1;
+    width: 45%;
+    margin: auto;
+
+    border-radius: 10px;
+
+
+
+    padding-bottom: 270px;
+
+
+
+    position: relative;
+
+    scale: 1.5;
+
+   
+   
+}
+
+
+.triangle{
+    float: left;
+    width: 0;
+    height: 0px;
+    /* border-width: 191px; */
+    border-left: 180px solid  #ff305b;
+    border-right: 180px solid transparent;
+    border-bottom: 180px solid transparent;
+
+    border-top-left-radius: 10px;
+
+    /*POSITION*/
+    position: relative;
+  
+}
+/*need to put the circle on-top of the traingle
+GOING TO USE POSITION
+*/
+.circle{
+    position: absolute;
+    top:0;
+    bottom: 10px;
+    right: 50px;
+    padding-top: 50px;
+    
+}
+.circle img{
+    width: 110px;
+    height: 110px;
+    background-color: #ff305b;
+    border-radius: 50%;
+}
+.rating{
+    margin-top: 12px;
+    
+}
+.rating i{
+    color:  #f1c30d;
+}
+.feedbackContent{
+    float: left;
+    /* width: 50%; */
+
+    /* transform: translate(-60px,50px); */
+    /* scale: 1.5; */
+    width: 100%;
+    
+  
+ 
+  
+
+}
+
+.location{
+    margin:15px 0px 10px
+}
+.location p{
+    float: left;
+    padding-right:10px;
+}
+.location i{
+    float: left;
+  
+}
+.rectangle{
+    background-color: #ff305b;
+    height: 10px;
+    width: 20px;
+    border-radius: 4px;
+    float: left;
+    margin: 5px 5px 0 0;
+}
+.shapeContainer{
+    width: fit-content;
+    padding-top: 100px;
+    margin: auto;
+
+    scale: 1.5;
+}
+.shapes i{
+    color: #ff305b;
+    float: left;
+}
+/*==========================*/
+.feedbackSDecoration{
+    width: 50%;
+}
+
+.writtenContent{
+   position:absolute;
+   top: 0px;
+   left: 0px;
+
+   
+   padding-left: 150px;
+   padding-top: 50px;
+
+   width: 65%;
+}
+
+/*=================================*/
+
+.blogSTitle{
+    text-align: center;
+    margin-bottom: 140px;
+    
+    font-size: 40px;
+    font-weight: 800;
+}
+/*================================*/
+.blogSection{
+    background: #f1f1f1;
+
+    padding: 80px 0 50px;
+}
+
+.blogSTitle{
+    /* background-color: aqua; */
+}
+.blogContentS{
+    background: #f1f1f1;
+    width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    scale: 1.1;
+}
+
+.blogContent{
+    background: #ffffff;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+.blogCD{
+    padding: 20px;
+
+}
+.blogCD p{
+    margin-bottom: 10px;
+}
+.blogContent img{
+    width: 100%;
+}
+.blogContent iframe{
+    width: 100%;
+
+    /*using aspect ratio*/
+    aspect-ratio: 16 / 9;
+}
+/*========================*/
+.contactS{
+    padding: 80px 0;
+    /* background-color: #555555; */
+    width: 50%;
+    margin: auto;
+}
+.contactSTitle{
+    text-align: center;
+    margin-bottom: 140px;
+    
+    font-size: 40px;
+    font-weight: 800;
+    /* background-color: #f1c30d; */
+}
+
+.ContactSContainer{
+    /* background-color: #ff305b; */
+}
+.formContainer{
+    /* background-color: aqua; */
+}
+.firstP{
+    /* background-color: blueviolet; */
+    
+   
+
+}
+
+.secondP{
+    /* background-color: pink; */
+}
+.thirdP{
+    /* background-color: green; */
+}
+.formBtn{
+    /* background-color: orange; */
+}
+
+/*========================================*/
+
+.firstP input{
+    height: 40px;
+    width: 47%;
+    margin-bottom: 25px; 
+
+    
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.firstP .name{
+    float: left;
+}
+.firstP .email{
+    float: right;
+}
+
+/*==============*/
+
+.secondP input{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 25px; 
+
+    
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.thirdP textarea{
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 25px;
+
+    resize: vertical;
+   
+}
+
+.formBtn .btn{
+    background-color: #ff305b;
+    border-color: #ff305b;
+    color: #ffffff;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 38px;
+}
+/*==========================================*/
+.footerS{
+
+    background-color: #333333;
+    padding: 50px 0;
+    text-align: center;
+
+}
+.footerContainer{
+    /* background-color: #ff305b; */
+    width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.footerI{
+    /* background-color: aquamarine; */
+    margin-bottom: 15px;
+
+}
+.footerI i{
+    padding: 0 10px;
+    color: #f1f1f1;
+}
+.footerContent{
+    /* background-color: chartreuse; */
+    color: #f1f1f1;
+
+}
+/*=====================================*/
+
+.factsContent i{
+    scale: 1.7;
+}
+
+.servicesSContentP i{
+    scale:1.7;
+}
+
